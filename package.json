@@ -1,0 +1,20 @@
+{
+  "name": "@stacks-os/utils",
+  "version": "1.0.1",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublish": "yarn run tsc"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "c32check": "^1.1.3"
+  }
+}
