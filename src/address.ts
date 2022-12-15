@@ -86,5 +86,6 @@ export const truncateAddress = (input: string, offset = 5): string => {
  */
 
 export const splitContractAddress = (address: string): string[] => {
-  return address.split('.');
+  if (!address) return [];
+  return address?.split('.');
 };
