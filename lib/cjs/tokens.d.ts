@@ -4,7 +4,7 @@
  * @param {Number} amountInMicroStacks - the amount of microStacks to convert
  * @param {Boolean} localString - format amount as local string
  * @returns {String} the amount of microStacks converted to Stacks
- * @example microToStacks(100000000); // "0.0001"
+ * @example microToStacks(1000000); // "1.00"
  */
 export declare const microToStacks: (amountInMicroStacks: string | number, localString?: boolean) => number | string;
 /**
@@ -12,7 +12,7 @@ export declare const microToStacks: (amountInMicroStacks: string | number, local
  *
  * @param {String | Number} amountInStacks - the amount of stacks to convert
  * @returns {String} the amount of stacks converted to microStacks
- * @example stacksToMicro(10); // "100000000"
+ * @example stacksToMicro(1); // "1000000"
  */
 export declare const stacksToMicro: (amountInStacks: string | number) => string | number;
 /**
